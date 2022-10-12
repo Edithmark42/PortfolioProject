@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['submit'])) {
  $name = $_POST['name']; 
- $mailFrom = $_POST['mail']; 
+ $mailFrom = $_POST['email']; 
  $message = $_POST['message']; 
  $mailTo = "iftikar.business@gmail.com"; 
  $headers = "From: ".$mailFrom;
@@ -10,6 +10,4 @@ if (isset($_POST['submit'])) {
   mail($mailTo,$name,$txt,$headers);
   header("Location: https://edithmark42.github.io/PortfolioProject/?MessageSent);
 }
-
-
 ?>
